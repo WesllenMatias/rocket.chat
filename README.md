@@ -34,8 +34,10 @@ sudo chmod +x /usr/local/bin/docker-compose
 5.1. Altere a permissao do arquivo do certificado.
 ```
 sudo chmod 400 /etc/nginx/certificate.key
+
+sudo openssl dhparam -out /etc/nginx/dhparams.pem 2048
 ```
-5.2. Agora abra o arquivo de configuracao do NGNIX.
+5.2. Agora abra o arquivo de configuracao do NGNIX.( OBS? Altere o server_name e o proxy_pass com o DNS de sua preferencia )
 ```
 sudo nano /etc/nginx/sites-available/default
 ```
