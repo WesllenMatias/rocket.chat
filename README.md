@@ -1,7 +1,7 @@
 # Rocket.Chat
 Rocket Chat no Docker.
 
-- Para rodar esse docker compose deve ser feita a instalacao do NGNIX e configurado com um certificado digital, assim como manda a documentacao, para evitar confusao (como eu mesmo me confundi no inicio), tomei a liberdade de nao incluir a configuracao de um firewall e do FailtoBan como foi feito na documentacao original.
+- Para rodar esse docker compose deve ser feita a instalacao do NGNIX e configurado com um certificado digital, assim como manda a documentacao, para evitar confusao (como eu mesmo me confundi no inicio), tomei a liberdade de nao incluir a configuracao de um firewall e do FailtoBan como foi feito na documentacao original ( logico que para fins de teste apenas, em producao deve ser adotado o metodo da documentacao pois e mais seguro ).
 
 ## Etapas da configuracao:
 
