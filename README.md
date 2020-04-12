@@ -82,7 +82,10 @@ sudo service nginx configtest && sudo service nginx restart
 sudo mkdir -p /var/www/rocket.chat/data/runtime/db
 sudo mkdir -p /var/www/rocket.chat/data/dump
 ```
-7. Criar o o docker-compose de acordo com a documentação.
+7. Agora va ate a pasta /var/www/rocket.chat/ e execute o docker-compose.yml
+```
+sudo docker-compose -f "docker-compose.yml" -d --build
+```
 
 ## Documentacao Original:
 ### https://rocket.chat/docs/installation/docker-containers/index.html
