@@ -6,7 +6,13 @@ Rocket Chat no Docker.
 ## Etapas da configuracao
 
 1. Criar certificado digital SSL.
+
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/certificate.key -out /etc/nginx/certificate.crt
+
 2. Instalar servidor ngnix.
+
+sudo apt-get install nginx
+
 3. Instalar o docker.
 4. Instalar o docker-compose.
 5. Configurar ngnix com o certificado.
