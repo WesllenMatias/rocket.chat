@@ -13,6 +13,12 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/cert
 ```
 sudo apt-get install nginx
 ```
+2.1 Clonar o repositorio com docker-compose.yml.
+```
+cd /var/www/
+
+git clone https://github.com/WesllenMatias/rocket.chat.git
+```
 3. Instalar o docker.
 ```
 wget -qO- https://get.docker.com/ | sh
@@ -24,6 +30,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 5. Configurar ngnix com o certificado.
+
 5.1. Altere a permissao do arquivo do certificado.
 ```
 sudo chmod 400 /etc/nginx/certificate.key
