@@ -91,4 +91,4 @@ sudo docker-compose -f "docker-compose.yml" -d --build
 ### https://rocket.chat/docs/installation/docker-containers/index.html
 
 ## Dicas:
-Para um ambiente de teste agil, creio que seja mais produtivo para criar um teste, usar o vagrant e subir uma VM ubuntu com o docker ja instalado, estarei providenciando na sequencia o arquivo Vagrantfile para facilitar o ambiente de teste, afinal configurar VM step-by-step realmente torna o teste um martirio.
+Para um ambiente de teste agil, creio que seja mais produtivo usar o Vagrant e subir uma VM ubuntu com o docker ja instalado, estarei providenciando na sequencia o arquivo Vagrantfile para facilitar o ambiente de teste, afinal configurar VM step-by-step realmente torna o teste um martirio.
