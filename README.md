@@ -88,7 +88,8 @@ sudo mkdir -p /var/www/rocket.chat/data/dump
 ```
 7. Agora va ate a pasta /var/www/rocket.chat/ e execute o docker-compose.yml
 ```
-sudo docker-compose -f "docker-compose.yml" -d --build
+docker-compose up -d
+
 ```
 
 ## Documentacao Original:
