@@ -13,7 +13,7 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/cert
 ```
 sudo apt-get install nginx
 ```
-2.1 Clonar o repositorio com docker-compose.yml.
+2.1 Clonar o repositorio com docker-compose.yml OBS:(para dentro da pasta /var/www/ isso é importante).
 ```
 cd /var/www/
 
@@ -46,7 +46,7 @@ sudo nano /etc/nginx/sites-available/default
 # HTTPS Server
     server {
         listen 443 ssl;
-        server_name chat.inumio.com;
+        server_name rocket.chat;
 
         error_log /var/log/nginx/rocketchat_error.log;
 
@@ -60,7 +60,7 @@ sudo nano /etc/nginx/sites-available/default
         ssl_session_timeout 180m;
 
         location / {
-            proxy_pass http://chat.inumio.com:3000/;
+            proxy_pass http://rocket.chat:3000/;
             proxy_http_version 1.1;
             proxy_set_header Upgrade $http_upgrade;
             proxy_set_header Connection "upgrade";
