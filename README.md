@@ -7,6 +7,10 @@ Rocket Chat no Docker.
 
 1. Criar certificado digital SSL.
 ```
+touch /etc/ngnix/certificate.key
+
+touch /etc/ngnix/certificate.crt
+
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/certificate.key -out /etc/nginx/certificate.crt
 ```
 2. Instalar servidor ngnix.
